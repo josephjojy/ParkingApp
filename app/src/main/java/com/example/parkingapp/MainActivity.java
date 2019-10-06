@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     int i;
     String s,st;
     Spinner pgsel;
-    String[] park = { "VP-1", "VP-2", "VP-3", "VP-4", "VP-5" ,"GD-1" ,"GD-2"};
+    String[] park = { "VP-1","VP-2", "VP-3", "VP-4", "VP-5" ,"GD-1" ,"GD-2"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
