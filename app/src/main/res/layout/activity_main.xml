@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/vp1"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:background="#00cc00"
+        android:text="VP-1\n20"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/vp2"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:text="VP-2\n20"
+        android:background="#00cc00"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        app:layout_constraintStart_toEndOf="@+id/vp1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/vp3"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:text="VP-3\n20"
+        android:background="#00cc00"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        app:layout_constraintStart_toEndOf="@+id/vp2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/vp4"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:text="VP-4\n20"
+        android:background="#00cc00"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        app:layout_constraintStart_toEndOf="@+id/vp3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/vp5"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:text="VP-5\n20"
+        android:background="#00cc00"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/entry"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vp2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/gd1"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:text="GD-1\n20"
+        android:background="#00cc00"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        app:layout_constraintStart_toEndOf="@+id/vp5"
+        app:layout_constraintTop_toBottomOf="@+id/vp2" />
+
+    <TextView
+        android:id="@+id/gd2"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:text="GD-2\n20"
+        android:background="#00cc00"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        app:layout_constraintStart_toEndOf="@+id/gd1"
+        app:layout_constraintTop_toBottomOf="@+id/vp3" />
+
+    <Button
+        android:id="@+id/entry"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:background="#00ff00"
+        android:text="ENTRY"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vp5" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:background="#ffff00"
+        android:text="EXIT"
+        android:textSize="40sp"
+        app:layout_constraintStart_toEndOf="@+id/entry"
+        app:layout_constraintTop_toBottomOf="@+id/gd2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintStart_toEndOf="@+id/gd2"
+        app:layout_constraintTop_toBottomOf="@+id/vp4"
+        app:srcCompat="@mipmap/parking" />
+
+    <Spinner
+        android:id="@+id/pgsel"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entry" />
+</androidx.constraintlayout.widget.ConstraintLayout>
